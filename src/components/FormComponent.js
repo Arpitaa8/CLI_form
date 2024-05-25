@@ -9,7 +9,7 @@ const FormComponent = () => {
     username: '',
     email: '',
     password: '',
-    phoneNo: '',
+    phoneNo: '', 
     country: '',
     city: '',
     panNo: '',
@@ -63,7 +63,7 @@ const FormComponent = () => {
       <div>
         <label>Last Name:</label>
         <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
-        {errors.lastName && <p>{errors.lastName}</p>}
+        {errors.lastName && (<p>{errors.lastName}</p>)}
       </div>
       <div>
         <label>Username:</label>
